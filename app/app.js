@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:8080");
+const socket = io("wss://85.215.159.4:12106");
 
 socket.on("message", text => {
 
