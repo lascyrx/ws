@@ -1,4 +1,4 @@
-const socket = io("ws://85.215.159.4:12106");
+const socket = io("wss://85.215.159.4:12106");
 
 socket.on("message", text => {
 
