@@ -1,13 +1,13 @@
-const socket = io("wss://85.215.159.4:12106");
+const socket = io("wss://olivia.hidencloud.com:24596/");
 
 socket.on("message", text => {
 
-  const el = document.createElement("li")
-  el.innerHTML = text
-  document.querySelector("ul").appendChild(el)
+  const el = document.createElement("li");
+  el.innerHTML = text;
+  document.querySelector("ul").appendChild(el);
 });
 
 document.querySelector("button").onclick = () => {
-  const text = document.querySelector("input").value
-  socket.emit("message", text)
+  const text = document.querySelector("input").value;
+  socket.emit("message", text);
 }
